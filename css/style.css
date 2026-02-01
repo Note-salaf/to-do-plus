@@ -1,0 +1,117 @@
+/* RESET BÁSICO */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+  background: #f4f6f8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* APP */
+.app {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* TÍTULO */
+.app h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* FORM */
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+form input,
+form select,
+form button {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+form input {
+  flex: 1;
+}
+
+form button {
+  cursor: pointer;
+}
+
+/* FILTROS */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.filters button {
+  flex: 1;
+  margin: 0 0.2rem;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+/* LISTA */
+#task-list {
+  list-style: none;
+}
+
+#task-list li {
+  background: #f1f1f1;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TEXTO DA TAREFA */
+#task-list span {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+/* CONCLUÍDA */
+.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* BOTÕES */
+#task-list button {
+  margin-left: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+/* PRIORIDADES */
+.priority-baixa {
+  border-left: 4px solid green;
+}
+
+.priority-media {
+  border-left: 4px solid orange;
+}
+
+.priority-alta {
+  border-left: 4px solid red;
+}
