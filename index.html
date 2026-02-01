@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Todo Plus</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <main class="app">
+    <h1>Todo Plus</h1>
+
+    <!-- Formulário -->
+    <form id="form-task">
+      <input
+        type="text"
+        id="task-title"
+        placeholder="Digite uma tarefa"
+        required
+      />
+
+      <select id="task-priority">
+        <option value="baixa">Baixa</option>
+        <option value="media">Média</option>
+        <option value="alta">Alta</option>
+      </select>
+
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <!-- Filtros -->
+    <div class="filters">
+      <button data-filter="all">Todas</button>
+      <button data-filter="pending">Pendentes</button>
+      <button data-filter="completed">Concluídas</button>
+    </div>
+
+    <!-- Lista -->
+    <ul id="task-list"></ul>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
